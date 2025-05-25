@@ -1,0 +1,53 @@
+nav {
+  height: 8vh;
+  width: 100%;
+  background-color: #151515;
+}
+
+.Title {
+  font-size: 30px;
+  margin: 10px 0 0 20px;
+  font-weight: bold;
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px 0 0 40px;
+  float: right;
+  display: flex;
+}
+
+li {
+  margin-right: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  position: relative;
+}
+
+li a:hover {
+  color: #fff;
+}
+
+a::after {
+  background-color: white;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
